@@ -1,8 +1,8 @@
 {
-  "name": "",
+  "name": "conectaADS-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "",
+  "description": "Backend do projeto ConectaADS.",
+  "main": "server.js",
   "type": "module",
   "license": "AGPL-version-3.0",
   "private": false,
@@ -13,23 +13,24 @@
   "homepage": "",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/niic-noguee/conectaADS-backend"
   },
-  "bugs": "",
+  "bugs": "https://github.com/niic-noguee/conectaADS-backend/issues",
   "keywords": [],
   "author": {
-    "name": "",
-    "email": "",
-    "url": ""
+    "name": "Nicolly Nogueira",
+    "email": "niicolly7nogueira@gmail.com",
+    "url": "https://github.com/niic-noguee"
   },
   "contributors": [],
   "scripts": {
-    "dev": "",
+    "dev": "tsx watch server.js",
     "test": ""
   },
   "dependencies": {
     "@prisma/client": "^6.0.0",
     "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
     "express": "^4.21.1",
     "jsonwebtoken": "^9.0.2"
   },

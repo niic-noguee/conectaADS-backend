@@ -26,8 +26,8 @@ router.post('/cadastro', async (req, res) => {
       });
       res.status(201).json(userDB);
    } catch (error) {
-      console.error(error); 
-      res.status(500).json({ error: 'Erro ao cadastrar usuário', details: error.message });
+      console.error(error);
+    res.status(500).json({ error: 'Erro interno do servidor: ' + error.message }); 
    }
 });
 
@@ -56,8 +56,8 @@ router.post('/login', async (req, res) => {
 
       res.status(200).json({ message: 'Login efetuado com sucesso', token: token });
    } catch (error) {
-      console.error(error); 
-      res.status(500).json({ error: 'Erro ao efetuar login', details: error.message });
+      console.error(error);
+    res.status(500).json({ error: 'Erro interno do servidor: ' + error.message }); 
    }
 });
 
