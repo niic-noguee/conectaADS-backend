@@ -1,0 +1,7 @@
+# Ignore pastas
+node_modules/
+
+# Ignore arquivos
+package-lock.json
+.env
+anotacoes.txt

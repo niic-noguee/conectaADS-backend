@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // Versão do JavaScript de saída
+    "module": "commonjs", // Sistema de módulos (pode ser "ESNext" se usar módulos ES)
+    "allowJs": true, // Permite arquivos .js
+    "checkJs": true, // Habilita verificação de tipo em arquivos .js
+    "outDir": "./dist", // Diretório de saída para os arquivos transpilados
+    "rootDir": "./src", // Diretório de origem
+    "strict": false, // Desativa regras estritas (opcional)
+    "esModuleInterop": true // Facilita importação de módulos CommonJS
+  },
+  "include": ["src/**/*.js"], // Inclui apenas arquivos .js na pasta src
+  "exclude": ["node_modules"] // Exclui dependências
+}
