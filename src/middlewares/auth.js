@@ -13,7 +13,7 @@ const auth = (req, res, next) => {
    try {
       const decoded = jwt.verify(token.replace('Bearer ', ''), JWT_SECRET);
 
-      req.userId = decoded.id;
+      req.userId = decoded.id; // Decodifica e armazena o ID do usuário
    } catch (error) {
       return res.status(401).json({ error: 'Token Inválido' });
    }

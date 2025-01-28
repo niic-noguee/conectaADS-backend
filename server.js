@@ -7,8 +7,7 @@ import { PrismaClient } from '@prisma/client';
 const prisma = new PrismaClient(); 
 const app = express(); 
 app.use(cors()); 
-app.use(express.json()); // Habilita o uso de JSON no corpo das requisições
-
+app.use(express.json()); 
 app.use('/', publicRoutes); 
 app.use('/', privateRoutes); 
 

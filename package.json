@@ -1,22 +1,16 @@
 {
-  "name": "conectaADS-backend",
+  "name": "conecta-ads",
   "version": "1.0.0",
-  "description": "Backend do projeto ConectaADS.",
+  "description": "Projeto social para visibilidade do curso de Análise e Desenvolvimento de Sistemas no IFCE.",
   "main": "server.js",
   "type": "module",
-  "license": "AGPL-version-3.0",
-  "private": false,
+  "license": "AGPL-3.0",
+  "private": true,
   "engines": {
-    "node": ">= 14.0.0",
-    "npm": ">= 6.0.0"
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
   },
-  "homepage": "",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/niic-noguee/conectaADS-backend"
-  },
-  "bugs": "https://github.com/niic-noguee/conectaADS-backend/issues",
-  "keywords": [],
+  "keywords": ["projeto-social", "ads", "ifce", "tecnologia"],
   "author": {
     "name": "Nicolly Nogueira",
     "email": "niicolly7nogueira@gmail.com",
@@ -25,7 +19,7 @@
   "contributors": [],
   "scripts": {
     "dev": "tsx watch server.js",
-    "test": ""
+    "start": "node server.js"
   },
   "dependencies": {
     "@prisma/client": "^6.0.0",
